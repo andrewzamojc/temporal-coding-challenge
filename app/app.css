@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950  text-black dark:text-white;
+
+  a {
+    @apply underline text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-400;
+  }
+
+  input {
+    @apply bg-white dark:bg-gray-700 rounded px-2 border border-black;
+  }
+}
